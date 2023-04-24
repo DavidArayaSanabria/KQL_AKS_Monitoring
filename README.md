@@ -5,7 +5,7 @@ You can use Azure montoring to create tickets for these alerts.
 
 In KQL you use // to comment lines.
 
-## Monitor AKS Pods running at the CPU utilization threshold you defined for 15 straight or longer:
+## Monitor AKS Pods running at the CPU utilization threshold you defined for 15 minutes straight or longer:
 
 ```
 let startDateTime = ago(15m);
@@ -63,7 +63,7 @@ CPUValue = UsageValue * 100.0 / MaxLimitValue
 
 ```
 
-## Monitor AKS Pods running at the Memory utilization threshold you defined for 15 straight or longer:
+## Monitor AKS Pods running at the Memory utilization threshold you defined for 15 minutes straight or longer:
 
 ```
 let endDateTime = now();
